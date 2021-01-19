@@ -1,0 +1,50 @@
+﻿
+html {
+
+	background-image: url(people-holding-white-paper-with-pandemic-covid19-text-3952234.jpg) ;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover; 
+	color: black;
+	font-size: large;
+	font-family:Helvetica;
+
+}
+	.def {
+	background-color: #FF6347;
+	padding: 8px;
+	margin-top: 7px;
+	width: 100%;
+	color: black;
+	width: 140px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 45px;
+	margin: 10px 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 600;
+	box-shadow: 0 8px 15px rgba(0,0,0,.1);
+}
+	.activated {
+	background-color: #FF69B4;
+	padding: 8px;
+	margin-top: 7px;
+	width: 100%;
+	color: black;
+	width: 140px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 45px;
+	margin: 10px 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight: 600;
+	box-shadow: 0 8px 15px rgba(0,0,0,.1);
+}

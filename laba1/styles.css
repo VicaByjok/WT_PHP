@@ -1,0 +1,199 @@
+
+* {
+	box-sizing: border-box;
+}
+html {
+
+	background-image: url(images/фонМоб.jpg) ;
+	background-repeat: no-repeat;
+	background-position:center;
+	background-size: cover;
+	color: white;
+	font-size: large;
+	font-family:Helvetica;
+	font-style: normal;
+
+}
+
+
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* flex-контейнер */
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+/* общие настройки для flex-элементов */
+.col {
+	position: relative;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+/* ширина блоков по умолчанию */
+.col_main
+{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding: 0 20px;
+}
+
+.col__aside	{
+	-ms-flex: 0 0 20%;
+	flex: 0 0 20%;
+	max-width: 100%;
+	padding: 0 20px;
+}
+
+.col__nav {
+	text-align: center;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+
+}
+
+	.col__nav a {
+		text-decoration: none;
+		outline: none;
+		display: inline-block;
+		margin: 10px 20px;
+		padding: 10px 30px;
+		position: relative;
+		border: 2px solid #f1c40f;
+		color: #f1c40f;
+		font-family: 'Montserrat', sans-serif;
+		transition: .4s;
+	}
+	.col__nav	a:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		border: 2px solid rgba(0,0,0,0);
+		transition: .4s;
+	}
+	.col__nav a:hover:after {
+		border-color: #f1c40f;
+		width: calc(100% - 10px);
+		height: calc(100% + 10px);
+	}
+/*Кнопки Вперёд Назад*/
+.button_next_or_prev a {
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	padding: 12px 40px;
+	margin: 10px 20px;
+	border-radius: 30px;
+	background-image: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+	background-position: 100% 0;
+	background-size: 200% 200%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	color: white;
+	box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
+	transition: .5s;
+}
+.button_next_or_prev a:hover {
+	box-shadow: 0 0 0 0 rgba(0,40,120,0);
+	background-position: 0 0;
+}
+/*Форма Логина Пароля*/
+.form {
+
+	width: 100%;
+	padding: 15px;
+	margin-top: 7px;
+	text-align: left;
+}
+/*Кнопка Войти*/
+.log {
+	display: inline-block;
+	color: #f1c40f;
+	background: #717171;
+	font-weight: 700;
+	text-decoration: none;
+	user-select: none;
+	padding: .5em 2em;
+	outline: none;
+	border: 2px solid;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+.log:hover {
+	background: rgba(255,255,255,.2);
+}
+.log:active {
+	background: white;
+}
+.swords{
+	width: 100%;
+	height: 180px;
+}
+/* ширина блоков  для больших экранов */
+@media (min-width: 992px) {
+	html {
+		background-image: url(images/DSFE39OsoYc.jpg) ;
+
+	}
+	.html1{
+		background-image: url(images/trilsik.jpg) ;
+	}
+	.html2{
+		background-image: url(images/origtril.jpg) ;
+	}
+	.html3{
+		background-image: url(images/trilprik.jpg) ;
+	}
+	.games{
+		background-image: url(images/games.jpg) ;
+	}
+	/* 1/5 от ширины контейнера */
+	.col__nav {
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+
+	/* 1/5 от ширины контейнера */
+	.col__aside {
+		-ms-flex: 0 0 20%;
+		flex: 0 0 20%;
+		max-width: 20%
+	}
+	.col_main{
+		-ms-flex: 0 0 60%;
+		flex: 0 0 60%;
+		max-width: 60%;
+		padding: 0 20px;
+	}
+	.col_main2{
+		-ms-flex: 0 0 80%;
+		flex: 0 0 80%;
+		max-width: 80%;
+		padding: 0 20px;
+	}
+
+}
