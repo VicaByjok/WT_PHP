@@ -1,0 +1,5 @@
+Windows*68
+Linux*78
+Android*61
+OS X*53
+iOS*63
